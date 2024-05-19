@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+img:hover {
+    transform: scale(1.1);
+}
+a { 
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+.header__list a {
+    color: white;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__tag li {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+
+.header__tag span {
+    color: orange;
+}
+
+.header__logo {
+    width: 40%;
+}
+
+.header__tag {
+    width: 60%;
+}
+
+.header-bottom {
+    background: #BD8B2B;
+    background: linear-gradient(180deg, #BD8B2B, #D3B927);
+}
+.header__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+}
+.header__list li {
+    padding: 15px;
+}
+.content{
+    display: flex;
+    
+}
+
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-left{
+    width: calc(100% - 35% - 20px);
+    margin-right: 25px;
+}
+.content-left__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.content-top-left{
+    width: calc(100% / 3 * 2 - 10px);
+}
+.content-top-right{
+    width: calc(100% / 3 - 15px);
+}
+.content-top-left__img{
+    height: 350px;
+}
+.content-top-right__img{
+    height: 350px;
+}
+
+.content-right{
+    width: 35%;
+}   
+.content-top-left__title{
+    font-size: 27px;
+    margin:10px 0;
+}
+.content-top-right__title{
+    font-size: 20px;
+    margin:10px 0;
+}
+
+
+.content-left__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.content-left__item{
+    width: calc(100% / 3 - 15px);
+}
+.content-left__item .item__title{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.news{
+    margin-top: 20px;
+}
+
+
+.news__item{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom:  1px solid #ccccccc8;
+}
+.news__item__image{
+    width: 40%;
+}
+.news__item__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news__item__content{
+    width: calc(100% - 40% - 20px);
+    margin-left: 20px;
+}
+.content__title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.content-right__news{
+    margin:40px 0;
+    
+}
+.news__title{
+    position: relative;
+    margin: 20px 0;
+}
+.news__title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 7px;
+    background: #ce962e;
+}
+
+.content-right__news .news__title{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.news__top{
+    margin: 20px 0 40px 0;
+    margin-bottom: 50px;
+}
+.news__top__title{
+    font-size: 20px;
+    margin: 20px 0;
+
+}
+.content-right__list .list__item .item__title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.content-right__list .list__item{
+    display: flex;
+    margin-bottom: 40px;
+}
+.content-right__list .item__img{
+    width: 30%;
+}
+.content-right__list .item__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-right__list .item__title{
+    width: calc(100% - 30% - 10px);
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-top: 5px solid orange;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 50px 0;
+}
+.footer__contact{
+   flex: 1;
+   display: flex;
+    justify-content: space-around;
+    padding: 0 160px;
+    
+}
+.footer__logo{
+    width: 15%;
+}
+.footer__info{
+    width: 60%;
+    margin-right: 5%;
+}
+.footer__info p{
+    margin-bottom: 10px;
+}
+.footer__social{
+    width: 35%;
+}
+.footer__social > h3,p{
+    margin-bottom: 10px;
+}
+.footer__social h3{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer__logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-bottom{
+    padding-top: 10px;
+    border-top: 1px solid #ccccccc8;
+}
